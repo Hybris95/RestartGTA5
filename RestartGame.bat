@@ -8,10 +8,13 @@ echo #--------------------#
 echo # Shutting down GTA5 #
 echo #--------------------#
 "%systemroot%\System32\taskkill" /IM GTA5.exe /F > NUL
-echo #-----------------#
-echo # Restarting GTA5 #
-echo #-----------------#
-"%systemroot%\System32\timeout" 5 /nobreak > NUL
+echo #-------------------------------------------#
+echo # Restarting GTA5 in %timeout% seconds, please wait #
+echo #-------------------------------------------#
+"%systemroot%\System32\timeout" %timeout% /nobreak > NUL
+echo #-----------------------#
+echo # Restarting GTA5 now ! #
+echo #-----------------------#
 cd "%path%\"
 %disk%:
 copy /Y "%path%\commandline_starter.txt" "%path%\commandline.txt" > NUL

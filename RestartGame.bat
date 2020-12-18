@@ -20,9 +20,9 @@ cd "%path%\"
 copy /Y "%path%\commandline_starter.txt" "%path%\commandline.txt" > NUL
 start "PlayGTAV.exe" "%path%\PlayGTAV.exe" > NUL
 :mainBis
-echo #---------------------------------#
-echo # Press a key to stop the process #
-echo # Send Ctrl+C to stop the script  #
-echo #---------------------------------#
+echo #-------------------------------------#
+echo # Press enter key to stop the process #
+echo # Send Ctrl+C to stop the script      #
+echo #-------------------------------------#
 @pause > NUL
 goto :main

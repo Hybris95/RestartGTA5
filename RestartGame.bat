@@ -24,5 +24,5 @@ echo #-------------------------------------#
 echo # Press enter key to stop the process #
 echo # Send Ctrl+C to stop the script      #
 echo #-------------------------------------#
-@pause > NUL
+pause > NUL
 goto :main

@@ -19,6 +19,8 @@ cd "%path%\"
 %disk%:
 copy /Y "%path%\commandline_starter.txt" "%path%\commandline.txt" > NUL
 start "PlayGTAV.exe" "%path%\PlayGTAV.exe" > NUL
+"%systemroot%\System32\timeout" 10 /nobreak > NUL
+cls
 :mainBis
 echo #-------------------------------------#
 echo # Press enter key to stop the process #
